@@ -1,0 +1,20 @@
+/* Style for all main tabs and subtabs */
+.stTabs [data-baseweb="tab-list"] {
+  gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+  background-color: black !important;
+  border-radius: 4px 4px 0px 0px !important;
+  padding: 10px 20px !important;
+  font-weight: 600 !important;
+  color: white !important;
+  border-bottom: 2px solid transparent !important; /* Transparent border for inactive tabs */
+}
+
+.stTabs [aria-selected="true"] {
+  background-color: black !important;
+  color: white !important;
+  border-bottom: 2px solid tomato !important; /* Tomato border only for active tab */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
