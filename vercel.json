@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "app/streamlit_app.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "builds": [
+    {
+      "src": "streamlit_app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/streamlit_app.py"
+    }
+  ]
+}
